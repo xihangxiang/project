@@ -1,0 +1,292 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*------------------------------------------------------------------------------
+|                               Page Level Styles - From Lab 3
+|-----------------------------------------------------------------------------*/
+
+:root {
+  --back: #067bc2;
+  --text: #0e0e52;
+  --front: #fff;
+  --mario: #ff0000;
+  --shadow: #31343a;
+
+  background-color: var(--back);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(white, transparent);
+  min-height: 100vh;
+}
+
+/*------------------------------------------------------------------------------
+|                               HEADER AND NAVIGATION - From Lab 3
+|-----------------------------------------------------------------------------*/
+
+nav li {
+  margin: 0.3em 0.3em;
+  text-align: center;
+}
+nav a,
+button {
+  background-color: var(--front);
+  color: var(--mario);
+  display: block;
+  text-decoration: none;
+}
+
+nav a:hover,
+button:hover {
+  background-color: var(--mario);
+  color: var(--front);
+  cursor: pointer;
+}
+
+nav a:active,
+button:active {
+  background-color: var(--front);
+  color: var(--text);
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+|                                MAIN CONTENT - From Lab 3
+|-----------------------------------------------------------------------------*/
+main {
+  background-color: var(--front);
+  color: var(--text);
+  margin: 1em;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+footer {
+  color: var(--front);
+  font-size: 0.9em;
+  text-align: center;
+}
+
+form {
+  font-size: 1.2rem;
+}
+
+a,
+a:visited {
+  color: var(--mario);
+}
+
+/*------------------------------------------------------------------------------
+|                               
+|                             Put lab 4 content here
+|
+|-----------------------------------------------------------------------------*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+main {
+  width: 40em;
+  padding: 2em;
+  border: 0.3em solid var(--text);
+  border-radius: 0.2em;
+  align-self: center;
+}
+
+/*------------------------------------------------------------------------------
+|                               Nav Styles - Lab 4
+|-----------------------------------------------------------------------------*/
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav li,
+button {
+  border: 0.3em solid var(--mario);
+  border-radius: 0.3em;
+  box-shadow: 0.2em 0.2em var(--shadow);
+}
+
+nav li {
+  flex: 0 1 15em;
+}
+nav a,
+legend {
+  padding: 1em;
+}
+
+/*------------------------------------------------------------------------------
+|                                Form Styles
+|-----------------------------------------------------------------------------*/
+
+form > * {
+  margin-top: 1em;
+}
+
+fieldset {
+  border: 0.2em solid var(--text);
+  border-radius: 0.2em;
+
+  column-count: 2; /* IE 10, Op 11.1+ */
+  -webkit-column-count: 2; /* Ch, Saf, And, BB  */
+  /* padding: 1em;
+  display: flex; */
+}
+
+fieldset input {
+  margin: 1em;
+}
+
+form > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div input:last-child {
+  font-size: 1.2rem;
+  border: 0.15em solid var(--text);
+  border-radius: 0.2em;
+  padding: 0.5em;
+  flex: 8;
+}
+
+div label:first-child {
+  flex: 2;
+}
+
+button {
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+/*------------------------------------------------------------------------------
+|                               Error Styles for Lab 5
+|-----------------------------------------------------------------------------*/
+
+#voting > div:nth-child(2) {
+  flex-direction: column;
+}
+.error {
+  color: green;
+
+  display: block;
+  column-span: all;
+}
+
+.hidden {
+  display: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+|                                  FORMS
+|-----------------------------------------------------------------------------*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+div ul {
+  background-color: none;
+  border: none;
+}
+
+form div {
+  padding: 0.25rem;
+}
+
+form button,
+#login div {
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+}
+fieldset {
+  border: 0.2rem solid var(--text);
+  border-radius: 0.25rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+legend {
+  padding: 0 0.5rem;
+}
+
+#agree-container {
+  text-align: center;
+}
+
+input {
+  border: 0.1rem solid var(--shadow);
+  border-radius: 0.25rem;
+  padding: 0.2rem;
+}
+/*-----------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+|                                  TABLES - For Results
+|-----------------------------------------------------------------------------*/
+table {
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  box-shadow: 0.125rem 0.1875rem 0.25rem 0.0625rem var(--shadow);
+  margin: 0 auto;
+  font-size: 1.1rem;
+  min-width: 20em;
+}
+
+thead {
+  border-bottom: 0.25rem solid var(--text);
+  border-left: 0.1em solid var(--text);
+  border-right: 0.1em solid var(--text);
+}
+
+th,
+td {
+  padding: 0.65rem;
+}
+
+tfoot {
+  color: var(--mario);
+  border-top: 0.25rem solid var(--text);
+}
+th {
+  background-color: var(--mario);
+  border-color: var(--text);
+  border-style: solid;
+  border-width: 0.125rem 0.075rem;
+  color: var(--front);
+  text-align: center;
+}
+
+td {
+  border-color: var(--text);
+  border-style: solid;
+  border-width: 0.15rem;
+}
+
+td:last-child {
+  text-align: right;
+  font-family: monospace;
+}
+
+tr:nth-child(even) {
+  background-color: var(--back);
+  color: var(--front);
+}

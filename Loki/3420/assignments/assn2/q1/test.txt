@@ -1,0 +1,2 @@
+this is a test text,just as test file.
+bananas,apples,pears are all my favorite fruits. i eat them every day.

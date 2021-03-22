@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+body{
+    font-family: 'Lora', serif;
+}
+#section1{
+    border-radius: 25px;
+    border: 2px solid #f775bb;
+    padding: 20px; 
+    font-family: 'Lora', serif;
+}
+#section1 a{
+    color: deeppink;
+}
+#section1 ul
+{
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+}
+#section1 ul li
+{
+	background-image:url(ribbon.png);
+	background-repeat:no-repeat;
+	background-position:25px 5px; 
+	padding-left:14px;
+    text-indent: 2em;
+}
+#section1 div::first-letter{
+    font-size: 150%;
+}
+
+#section2 td{
+    vertical-align: middle;
+    text-align: center;  
+}
+
+#section2 a{
+    text-decoration: none;
+}
+#section2 tbody{
+    width:"900px";
+}
+#section2 tbody td{
+  width:"16%";
+}
+
+#section3 nav ul {
+    background-color: rebeccapurple; 
+    display: flex;  
+    margin: 0 -10px;  
+    justify-content: space-around;  
+    padding: 10px;  
+    flex-basis: auto; 
+    flex-direction: row;  
+  }  
+  #section3 nav li {  
+    margin: 0 10px;  
+  }  
+  #section3  ul li { 
+    list-style-type: none;  
+  }
+  
+  #section3 input {  
+    height: 25px;  
+    background-color: #2ec4b5;  
+    border-style: none;  
+    padding-left: 25px;  
+    border: none;  
+    outline-style: none; 
+    color: white;  
+    float: right;  
+  } 
+  #section3 .input-icon i {  
+    position: absolute; 
+    color: white;  
+    padding: 3px; 
+    padding-left: 5px;
+  } 
+  #section3  i {
+    color: white; 
+    size: 100%;
+  }
+    #section3 .push-right { 
+    margin-left: auto; 
+  } 
+  #section3 .push-right1 {  
+    margin-left: 60%;  
+  }  
+  #section3 .fa-quidditch {  
+    font-size: 150%;  
+  }  
+  #section3 button {  
+    border: none;  
+    border-radius: 25%;  
+    background-color: white;  
+    outline-style: none; 
+    padding: 2px;  
+    width: 50px;  
+    height: 20px;  
+    float: right; 
+    color: rebeccapurple; 
+  } 
+  #section3 a:link { 
+    color: #ccff66; 
+  } 
+  #section3  a:visited { 
+    color: #ff6666; 
+  } 
+  #section3 a:hover {  
+    color: white; 
+  } 
+  #section3 a { 
+    text-decoration: none; 
+  } 
+  input[type='search']::-webkit-search-decoration,  
+  input[type='search']::-webkit-search-cancel-button,  
+  input[type='search']::-webkit-search-results-button, 
+  input[type='search']::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+#section4{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    border: 30px;
+  border-right-color: #4285f4;
+  border-right-style: solid;
+}
+#section4 h3{
+    color:#4285f4;
+    text-transform:uppercase;
+}
+#section4 span{
+    text-transform:capitalize;
+    position: absolute;
+    right: 0px;
+    width: 420px;
+    padding: 0px;
+}
+#section4 a{
+    margin-left: 100px;
+    color:#4285f4;
+}
+#section4 a:visited{
+    color:red;
+}
+#section4 label{
+    text-transform:uppercase;
+    color: rgb(128, 126, 126);
+}
+#section4 input[type=text]{
+  text-transform:uppercase;
+  width: 100%;
+  padding: 12px 100px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: gainsboro;
+  text-transform:uppercase;
+}
+#section4 input[type=submit] {
+    width: 100%;
+    background-color: #4285f4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform:uppercase;
+  }
+
+
+#section5 .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 280px;
+    margin: auto;
+    text-align: center;
+  }
+  
+ #section5 .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  #section5 button {
+    width: 100%;
+    background-color: #724d64;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform:uppercase;
+  }
+  
+  #section5 a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count:infinite;
+  }
+  @keyframes slidein{
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }}
+  #section5 button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+
+  

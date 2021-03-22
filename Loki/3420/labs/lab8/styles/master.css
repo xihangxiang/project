@@ -1,0 +1,16 @@
+:root {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#grr {
+  font-size: 150%;
+  color: #dd3434;
+}
+
+code {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 0.1em 0.25em;
+  border-radius: 0.2em;
+}

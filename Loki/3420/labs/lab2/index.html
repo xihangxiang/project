@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab2</title>
+    <style>
+      .img {
+         width: 300px;
+         height: 300px;
+      }
+      .gray{
+        color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <header><img class="img" src="img/mario.png" alt=""></header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Voting</a></li>
+        <li><a href="results.php">Results</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="contact.html">Regulations</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="voting.php" method="get">
+      <h1>Vote for you Favourite Main Character</h1>
+      <label for="name">Name:</label>
+      <input class="gray" type="text" id="name" name="Name" value="John Smith"><br>
+      <label for="email">Email:</label>
+      <input class="gray" type="email" id="email" name="Email" required value="John@email.com"><br>
+      <fieldset>
+        <legend>Vote for you Favourite Main Character</legend>
+        <input type="radio" id="Mario" name="chara" value="Mario">
+        <label for="Mario">Mario</label><br>
+        <input type="radio" id="Luigi" name="chara" value="Luigi">
+        <label for="Luigi">Luigi</label><br>
+        <input type="radio" id="Peach" name="chara" value="Peach">
+        <label for="Peach">Peach</label><br>
+        <input type="radio" id="Daisy" name="chara" value="Daisy">
+        <label for="Daisy">Daisy</label><br>
+        <input type="radio" id="Yoshi" name="chara" value="Yoshi">
+        <label for="Yoshi">Yoshi</label><br>
+      </fieldset>
+      <input type="checkbox" id="terms" required>
+      <label for="terms"> I agree to the <a href="terms.html">Terms and Conditions</a></label><br>
+      <button type="submit" value="Submit">Submit Vote</button>
+    </form>
+  </main>
+    <footer>
+      <span>&copy; 2021 Trent Web Dev.</span>
+    </footer>
+  </body>
+</html>

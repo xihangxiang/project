@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px
+}
+
+a {
+    text-decoration: none
+}
+
+nav {
+    background: blue
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 50px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ff0000
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+    margin: 20px auto;
+}
+
+td {
+    border: #ccc solid 1px;
+    padding: 10px;
+}
+
+.btn {
+    margin-top: 30px
+}
+
+.btn input {
+    margin-left: 10px;
+}
+
+.btn input[type='submit'] {
+    background: blue;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.btn input[type='text'] {
+    padding: 5px 10px;
+    margin-bottom: 10px
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.w200 {
+    width: 200px
+}
+
+.gray {
+    color: blue
+}
+
+.green {
+    color: green
+}
+
+.red {
+    color: red
+}
+
+.scores {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.over {
+    margin-top: 20px;
+}
+
+.des {
+    margin-top: 20px;
+}
